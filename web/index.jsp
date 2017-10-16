@@ -17,7 +17,7 @@
                         <% try {
             if (request.getParameter ("btnenvia") !=null){
         
-        String nome = request.getParameter("name");
+                   String nome = request.getParameter("name");
                    
                    HttpSession sessão = request.getSession();
                    sessão.setAttribute("teste", nome);

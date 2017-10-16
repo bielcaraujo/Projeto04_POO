@@ -13,7 +13,7 @@
     </head>
     <body>
         <h1>Home</h1>
-        
+            
         <%if(session.getAttribute("teste") !=null){
             String teste = session.getAttribute("teste").toString();
         
@@ -21,6 +21,7 @@
         <h1><center><b>Seja bem vindo <%= teste%>!!</b></center></h1>
         <form>
             <input type="submit" name="btnSair" value="Sair"/>
+            <input type="submit" name="btnTeste" value="Teste"/>
         </form>
         
       <%}else
@@ -33,6 +34,11 @@
                     {
                         session.invalidate();
                         response.sendRedirect("home.jsp");
+
+                    }
+                if (request.getParameter("btnTeste") != null){
+                    response.sendRedirect("teste.jsp");
+
 
                     }
             

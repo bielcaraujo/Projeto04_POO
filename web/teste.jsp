@@ -39,7 +39,7 @@
                 request.getParameter("19"),
             });
             double pontosJogador = Quiz.getGradeAverage() * 10;
-            String nome = request.getParameter("name");
+            String nome = session.getAttribute("teste").toString();
             
             //criando jogador
             Jogador p = new Jogador(nome);

@@ -23,7 +23,7 @@
         <title>Ranking</title>
     </head>
     <body>
-        <a href="index.jsp">Home</a>
+        <a href="home.jsp">Home</a>
         <div>
             <div>
                 <h1>Ranking</h1> 
