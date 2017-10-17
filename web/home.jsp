@@ -55,8 +55,6 @@
                         
         <form>
             <center><<<<<<< HEAD
-        <input type="submit" name="btnSair" value="Sair"/>
-=======
             <input type="submit" name="btnSair" value="Sair"/>
             <input type="submit" name="btnTeste" value="Teste"/>
             >>>>>>> origin/master</center>
