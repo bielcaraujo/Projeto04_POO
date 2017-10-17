@@ -1,0 +1,12 @@
+    <!-- Bootstrap core JavaScript -->
+    <script src="res/jquery/jquery.min.js"></script>
+    <script src="res/popper/popper.min.js"></script>
+    <script src="res/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="res/jquery-easing/jquery.easing.min.js"></script>
+    <script src="res/scrollreveal/scrollreveal.min.js"></script>
+    <script src="res/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>

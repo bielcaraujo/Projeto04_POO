@@ -52,18 +52,16 @@
             pontos.ranking.add(pontos);
             
             Quiz.reiniciaFoiUsado();
-            response.sendRedirect("ranking.jsp");
+            response.sendRedirect("home.jsp");
         }
     } catch (Exception e) {
     }
 
 %>
 <html>
-    <head>
-        <title>JSP Page</title>
-    </head>
+    <%@include file="WEB-INF/jspf/header.jspf" %>
     <body>
-        <a hef="ranking.jsp">Ranking</a>
+              <section class="bg-dark" id="about">
         <div>
         <div>            
         <h1>Teste</h1>
@@ -76,15 +74,17 @@
                 <h4><%= q.getQuestao() %></h4>
                 <%for(String alternative: q.getAlternativa()){%>
                     <input type="radio" name="<%=test.indexOf(q)%>"
-                        value="<%=alternative%>"/><%=alternative%>
+                        value="<%=alternative%>"/><%=alternative%><br/>
                 <%}%>
             <hr/>
             <%}%>
-            <input type="submit" name="teste" value="Concluir"/>
+            <br/><br/><br/><center><input class="btn btn-primary" type="submit" name="teste" value="Concluir"/></center>
             <input type="hidden" name="name" value=<%=request.getParameter("name")%> />
         </form>
         <br/><br/><br/>
         </div>
         </div>
+              </section>
+        <%@include file="WEB-INF/jspf/footer.jspf" %>
     </body>
 </html>
